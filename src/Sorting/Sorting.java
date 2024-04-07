@@ -11,7 +11,8 @@ public final class Sorting {
     }
     public static int[] getValues(){
 
-        if(Visualiser.length != null) length = Integer.parseInt(Visualiser.length);
+        if(Visualiser.length.equals("")) length = 270;
+        else length = Integer.parseInt(Visualiser.length);
 
         if (length < 10 || length > 700) {
             length = 270;
